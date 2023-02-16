@@ -1,0 +1,131 @@
+body{
+    height: 100vh;
+}
+
+.btn{
+    background-color: green;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+/* Start Modal Area */
+.modal{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 1;
+
+    display: none;
+}
+
+.modal-dialog{
+    width: 650px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%,-50%);
+}
+
+.modal-content{
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+/* Start modal header */
+.modal-header{
+    text-align: center;
+    padding: 20px 0;
+
+    position: relative;
+}
+
+.close-btn{
+    font-family: sans-serif;
+    font-size: 25px;
+
+    position: absolute;
+    right: 20px;
+    top: 0;
+
+    cursor: pointer;
+}
+
+.close-btn:hover{
+    color: red;
+}
+
+img.avatar{
+    width: 100px;
+}
+
+/* Start modal body */
+.modal-body{
+    padding: 5px 20px;
+}
+
+.form-group{
+    margin: 15px 0;
+}
+
+.form-group label{
+    font-weight: bold;
+    display: block;
+    margin: 5px 0;
+}
+
+input[class=form-control]{
+    width: 100%;
+    border: 1px solid #ddd;
+
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+
+input[class=form-control]:focus{
+    outline: none;
+}
+
+.d-grid .btn{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Start modal-footer */
+.modal-footer{
+    border-top: 1px solid #ddd;
+    padding: 20px;
+}
+
+span.forgot{
+    float: right;
+}
+
+/* Insert animation */
+.fade{
+    animation-name: myani;
+    animation-duration: 0.9s;
+}
+
+@keyframes myani {
+    from{
+        transform: scale(0);
+        /* opacity: 0; */
+    }
+    to{
+        transform: scale(1);
+        /* opacity: 1; */
+    }
+}
